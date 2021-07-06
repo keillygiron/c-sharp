@@ -57,24 +57,7 @@ namespace inventario
             movimientoInventario(codigo, Int32.Parse(cantidad), "+");
 
         }
-          static void Ajustepositivo() {
-            string codigo = "";
-            string cantidad = "";
-
-            Console.Clear();
-            Console.WriteLine();
-
-            Console.WriteLine("Ajuste positivo al Inventario");
-            Console.WriteLine("************");
-            Console.Write("Ingrese el codigo del producto: ");
-            codigo = Console.ReadLine();
-            Console.Write("Ingrese la cantidad del producto: ");
-            cantidad = Console.ReadLine();
-
-            movimientoInventario(codigo, Int32.Parse(cantidad), "+");
-        }
-
-
+          
             static void SalidaDeInventario() {
             string codigo = "";
             string cantidad = "";
@@ -90,6 +73,23 @@ namespace inventario
             cantidad = Console.ReadLine();
 
             movimientoInventario(codigo, Int32.Parse(cantidad), "'+'");
+        }
+
+            static void Ajustepositivo() {
+            string codigo = "";
+            string cantidad = "";
+
+            Console.Clear();
+            Console.WriteLine();
+
+            Console.WriteLine("Ajuste positivo al Inventario");
+            Console.WriteLine("************");
+            Console.Write("Ingrese el codigo del producto: ");
+            codigo = Console.ReadLine();
+            Console.Write("Ingrese la cantidad del producto: ");
+            cantidad = Console.ReadLine();
+
+            movimientoInventario(codigo, Int32.Parse(cantidad), "+");
         }
          
             static void Ajustenegativo() {
