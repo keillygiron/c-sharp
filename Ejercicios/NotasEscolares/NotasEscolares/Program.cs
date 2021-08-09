@@ -17,29 +17,27 @@ namespace NotasEscolares
             Console.WriteLine("Escriba la matricula: ");
             estudiante.setMatricula(Console.ReadLine());
 
-            Console.WriteLine("Nota 1: ");
+            Console.WriteLine("Ingles: ");
             estudiante.setNota1(decimal.Parse(Console.ReadLine()));
 
-            Console.WriteLine("Nota 2: ");
+            Console.WriteLine("Matematicas: ");
             estudiante.setNota2(decimal.Parse(Console.ReadLine()));
 
-            Console.WriteLine("Nota 3: ");
+            Console.WriteLine("Quimica: ");
             estudiante.setNota3(decimal.Parse(Console.ReadLine()));
 
-            Console.WriteLine("Nota 4: ");
+            Console.WriteLine("Fisica: ");
             estudiante.setNota4(decimal.Parse(Console.ReadLine()));
 
-            Console.WriteLine("Nota 5: ");
+            Console.WriteLine("Español: ");
             estudiante.setNota5(decimal.Parse(Console.ReadLine()));
             
             Console.WriteLine("****//////********************* ");
             Console.WriteLine("Nombre: "+ estudiante.getNombre());
             Console.WriteLine("Matricula: "+ estudiante.getMatricula());
             Console.WriteLine("Promedio: "+ estudiante.getPromedio());
-            Console.WriteLine("Literal: "+ estudiante.getLiteral());
-
-
- 
+            Console.WriteLine("Top: "+ estudiante.getTop());
+            
 
             Console.ReadKey();
         }

@@ -14,7 +14,7 @@ namespace NotasEscolares
         private decimal nota4;
         private decimal nota5;
         private decimal promedio;
-        private string literal;
+        private string top;
 
         public void setNombre(string Nombre)
         {
@@ -63,37 +63,41 @@ namespace NotasEscolares
 
         public decimal getPromedio()
         {
-           
            promedio = (nota1+nota2+nota3+nota4+nota5) / 5;
-           
-            return promedio;
-
+           return promedio;
+        
         }
-        public string getLiteral()
+           
+        public string getTop()
         {
            if (promedio >=90 && promedio <=100) 
            {
-               literal = "Lital A";
+               top = "Top A";
            }
            else
            if (promedio >=80 && promedio <=89) 
            {
-               literal = "Lital B";
+               top = "Top B";
            }
            else
            if (promedio >=70 && promedio <=79) 
            {
-               literal = "Lital C";
+               top = "Top C";
            }
            else
            if (promedio <=69) 
            {
-               literal = "Lital F";
+               top = "Top F";
            }
 
-            
-            return literal;
+             return top;
         }
+
+            
+
+            
+
+        
 
     }
 }
